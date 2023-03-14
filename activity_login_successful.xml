@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginSuccessful">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Bluebird"
+        android:textColor= "@color/white"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/userdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Welcome"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="Hello world"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Logout"
+        android:layout_below="@id/userdetails"
+        android:text="Logout"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+
+
+</LinearLayout>
